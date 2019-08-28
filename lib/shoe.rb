@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     new_array = []
     new_array << brand
-    BRANDS << brand
+    BRANDS.uniq << brand
   end
 
   def cobble
