@@ -1,6 +1,14 @@
 class Book
-  attr_accessor :author, :page_count, :genre
-  attr_reader :title
+  attr_accessor :author, :page_count
+  attr_reader :title, :genre
+  
+  def genre=(genre)
+    @genre = genre
+  end
+  
+  def genre 
+    @genre
+  end 
   
   GENRES =[]
 
